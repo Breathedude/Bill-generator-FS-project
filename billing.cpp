@@ -37,10 +37,10 @@ class items
 void items::append_itemname()
 {
 	buffer.erase();
-	cout<<"\nEnter item to be appended to file:";
+	cout<<"\nEnter item to be appended to file:"<<endl;
 	getline(cin, buffer);
 	cout<<"\nEnter Price of item:";
-	cin>>price;
+	cin>>price
 	//store it in a file
 	store_item_names();
 }
@@ -49,7 +49,7 @@ void items::store_item_names()
 {
 	fstream file;
 	file.open("storeitems.txt",ios::out|ios::app);
-	file<<buffer<<"|"<<price<<"$"<<"\n";
+	file<<buffer<<"|"<<price<<"$"<<"\t";
 	file.close();
 }
 
