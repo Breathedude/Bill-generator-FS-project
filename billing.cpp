@@ -119,15 +119,15 @@ int main()
 		switch(choice)
 		{
 			case 1: system("clear");
-				cout<<"\nEnter month name and year(monthnameyy):"; cin>>month;	
+				cout<<"\nEnter month name and year(monthnameyy):"<<endl; cin>>month;	
 				i.insert_monthly_income(month);
 				break;
 			case 2: system("clear");
-				cout<<"\nEnter month name and year(monthnameyy):";	cin>>month;
+				cout<<"\nEnter month name and year(monthnameyy):"<<endl;	cin>>month;
 				i.display_bill(month);
 				break;
 			case 3: system("clear");
-				cout<<"\nNew Item to store list\n";
+				cout<<"\nNew Item to store list\n"<<endl;
 				i.append_itemname();
 			case 4: exit(0);
 			default: cout<<"Invalid choice\n";
